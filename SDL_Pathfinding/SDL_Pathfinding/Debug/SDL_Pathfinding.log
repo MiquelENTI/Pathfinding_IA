@@ -1,10 +1,3 @@
-﻿  Agent.cpp
-  Grid.cpp
-  main.cpp
-  PathFollowing.cpp
-  ScenePathFindingMouse.cpp
-  SDL_SimpleApp.cpp
-  Seek.cpp
-  utils.cpp
-  Generating Code...
-  SDL_Pathfinding.vcxproj -> C:\Users\lluis\Desktop\AI-Enti\2223\practiques\old\SDL_Pathfinding_v01\SDL_Pathfinding\bin\SDL_Pathfinding.exe
+﻿  SceneAlgorithmPath.cpp
+C:\Users\PauInsa\source\repos\MiquelENTI\Pathfinding_IA\SDL_Pathfinding\SceneAlgorithmPath.cpp(60,22): warning C4018: '<': signed/unsigned mismatch
+  SDL_Pathfinding.vcxproj -> C:\Users\PauInsa\Source\Repos\MiquelENTI\Pathfinding_IA\bin\SDL_Pathfinding.exe

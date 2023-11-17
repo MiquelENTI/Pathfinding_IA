@@ -4,6 +4,7 @@
 
 #include "SDL_SimpleApp.h"
 #include "ScenePathFindingMouse.h"
+#include "SceneAlgorithmPath.h"
 
 using namespace std;
 
@@ -23,7 +24,7 @@ int main(int argc, char ** argv)
 	
 	SDL_SimpleApp *app = SDL_SimpleApp::Instance();
 
-	Scene *curr_scene = new ScenePathFindingMouse;
+	Scene *curr_scene = new SceneAlgorithmPath;
 	app->setWindowTitle(curr_scene->getTitle());
 
 	
