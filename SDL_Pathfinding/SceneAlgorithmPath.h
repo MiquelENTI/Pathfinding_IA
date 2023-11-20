@@ -10,6 +10,7 @@
 #include "PathFollowing.h"
 #include "Grid.h"
 #include "BFS.h"
+#include "Dijkstra.h"
 
 class SceneAlgorithmPath :
 	public Scene
@@ -25,6 +26,7 @@ private:
 	Vector2D coinPosition;
 
 	BFS* algorithmBFS;
+	Dijkstra* algorithmDijkstra;
 
 	Grid* maze;
 	bool draw_grid;

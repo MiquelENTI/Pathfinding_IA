@@ -133,6 +133,7 @@
   <ItemGroup>
     <ClCompile Include="Agent.cpp" />
     <ClCompile Include="BFS.cpp" />
+    <ClCompile Include="Dijstra.cpp" />
     <ClCompile Include="SceneAlgorithmPath.cpp" />
     <ClCompile Include="Grid.cpp" />
     <ClCompile Include="main.cpp" />
@@ -145,6 +146,7 @@
   <ItemGroup>
     <ClInclude Include="Agent.h" />
     <ClInclude Include="BFS.h" />
+    <ClInclude Include="Dijkstra.h" />
     <ClInclude Include="Grid.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="Path.h" />

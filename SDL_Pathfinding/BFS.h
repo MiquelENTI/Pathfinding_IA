@@ -20,10 +20,13 @@ public:
 
 private:
 	std::vector<Node*> frontier;
+	std::vector<Node*> nextFrontier;
 	std::vector<Node*> visited;
+
 
 	bool validPathNode(Node* n);
 	bool isInVisited(Vector2D v);
+	bool isInNextFrontier(Vector2D v);
 
 
 

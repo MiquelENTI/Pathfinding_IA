@@ -50,7 +50,7 @@ void SceneAlgorithmPath::update(float dtime, SDL_Event* event)
 	case SDL_KEYDOWN:
 		if (event->key.keysym.scancode == SDL_SCANCODE_SPACE)
 			draw_grid = !draw_grid;
-		if (event->key.keysym.scancode == SDL_SCANCODE_8)
+		if (event->key.keysym.scancode == SDL_SCANCODE_6)
 		{
 			//BFS
 			algorithmBFS = new BFS(maze, coinPosition, agents[0]->getPosition());
@@ -62,9 +62,17 @@ void SceneAlgorithmPath::update(float dtime, SDL_Event* event)
 				agents[0]->addPathPoint(path[i]);
 			}
 		}
-		if (event->key.keysym.scancode == SDL_SCANCODE_2)
+		if (event->key.keysym.scancode == SDL_SCANCODE_7)
 		{
+			//Dijkstra
+			algorithmDijkstra = new Dijkstra(maze, coinPosition, agents[0]->getPosition());
 
+			vector<Vector2D> path = algorithmDijkstra->CalculatePath();
+
+			for (int i = 0; i < path.size(); i++)
+			{
+				agents[0]->addPathPoint(path[i]);
+			}
 		}
 		if (event->key.keysym.scancode == SDL_SCANCODE_3)
 		{

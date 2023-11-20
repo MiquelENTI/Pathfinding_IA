@@ -7,6 +7,9 @@ public:
 	Node* cameFrom;
 	Vector2D pos;
 	int heuristic;
+	int costSF;
+
+	Node();
 
 	Node(Node* c, Vector2D p)
 	{
